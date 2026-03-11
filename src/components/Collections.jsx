@@ -87,7 +87,7 @@ const Collections = () => {
   return (
     <div id="collections">
       <div className="max-w-300 m-auto flex lg:flex-row flex-col items-center md:py-38 py-20 gap-15 text-center lg:text-left lg:px-0  px-20">
-        <div className="md:w-[55%] relative">
+        <div className="md:w-[55%] w-full relative">
           <h2 className="text-7xl">Discover our nft collection</h2>
           <img
             src="./images/collection-head-1.png"
@@ -100,7 +100,7 @@ const Collections = () => {
             className="bottomImage absolute max-w-15 top-20 right-2/3"
           />
         </div>
-        <div className="md:w-[45%] gap-6 md:items-start flex flex-col items-center">
+        <div className="md:w-[45%] w-full gap-6 md:items-start flex flex-col items-center">
           <p>
             Enter the fascinating world of the Planet Lizard, where 1111 unique
             digital characters await your collection. From rare and exotic
