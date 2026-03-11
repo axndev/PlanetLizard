@@ -20,7 +20,7 @@ body {
     font-family: 'rooyin';
     color: white;
     text-transform: uppercase;
-    
+
 }
 
 h1, h2, h3, h4 {
@@ -80,6 +80,7 @@ body::-webkit-scrollbar {
     overflow: auto;
 }
 
+
 .marqueWrapper::-webkit-scrollbar {
     display: none;
 }
@@ -97,8 +98,6 @@ body::-webkit-scrollbar {
     padding-right: 20px;
 
 }
-
-
 
 .marqueSlider.right {
     animation: rightSlider 25s infinite linear;
@@ -190,13 +189,23 @@ body::-webkit-scrollbar {
         transform: rotate(0deg);
     }
 }
+
 .imagesWrapperOverlay,
-.imagesMarque img{
+.imagesMarque img {
     transition: all .2s ease-out;
 }
 
-@layer base{
-    body {
-        @apply selection:bg-red-600
+
+@media (max-width:768px) {
+    .marqueWrapper {
+        overflow: hidden;
     }
+    .roadmapCard::before,
+    .roadmapCard::after{
+        height: 50px;
+    }
+}
+
+body::selection {
+    background-color: red;
 }

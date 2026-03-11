@@ -86,9 +86,9 @@ const Collections = () => {
 
   return (
     <div id="collections">
-      <div className="max-w-300 m-auto flex lg:flex-row flex-col items-center md:py-38 py-20 gap-15 text-center lg:text-left lg:px-0  px-20">
+      <div className="md:max-w-300 m-auto flex lg:flex-row flex-col items-center md:py-38 py-20 md:gap-15 gap-5 text-center lg:text-left">
         <div className="md:w-[55%] w-full relative">
-          <h2 className="text-7xl">Discover our nft collection</h2>
+          <h2 className="md:text-7xl text-4xl">Discover our nft collection</h2>
           <img
             src="./images/collection-head-1.png"
             alt=""
@@ -100,7 +100,7 @@ const Collections = () => {
             className="bottomImage absolute max-w-15 top-20 right-2/3"
           />
         </div>
-        <div className="md:w-[45%] w-full gap-6 md:items-start flex flex-col items-center">
+        <div className="md:w-[45%] w-full gap-6 md:items-start flex flex-col items-center px-5">
           <p>
             Enter the fascinating world of the Planet Lizard, where 1111 unique
             digital characters await your collection. From rare and exotic
@@ -145,21 +145,21 @@ const Collections = () => {
           </div>
         </div>
         <div className="marqueWrapper flex rightMarque">
-          <div className="flex gap-5 marqueSlider right">
+          <div className="flex gap-5 marqueSlider right pointer-events-none">
             {brImages.map((item, key) => (
               <div
                 key={key}
-                className="bg-blue-100 marqueItem  md:min-w-65 min-w-40rounded"
+                className="bg-blue-100 marqueItem  md:min-w-65 min-w-40 rounded pointer-events-none"
               >
                 <img src={item} alt="" className="right-marque-img" />
               </div>
             ))}
           </div>
-          <div aria-hidden className="flex gap-5 marqueSlider right">
+          <div aria-hidden className="flex gap-5 marqueSlider right pointer-events-none">
             {brImages.map((item, key) => (
               <div
                 key={key}
-                className="bg-blue-100 marqueItem  md:min-w-65 min-w-40 rounded"
+                className="bg-blue-100 marqueItem  md:min-w-65 min-w-40 rounded pointer-events-none"
               >
                 <img src={item} alt="" className="right-marque-img" />
               </div>

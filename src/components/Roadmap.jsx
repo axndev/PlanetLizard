@@ -107,19 +107,19 @@ const Roadmap = () => {
           />
         </div>
       </div>
-      <div className="max-w-273 m-auto lg:mt-50 mt-10 gap-25 flex flex-col px-10">
+      <div className="max-w-273 m-auto lg:mt-50 md:mt-10 mt-20 md:gap-25 gap-10 flex flex-col px-5">
         {roadmap.map((step, key) => (
           <div
             key={key}
             id={`step${key + 1}`}
-            className={`p-10 gap-5 border border-[#494949]  rounded-3xl grid lg:grid-cols-2 roadmapCard ${key % 2 == 0 ? "roadMapRight" : "roadMapLeft"}`}
+            className={`md:p-10 p-5 gap-5 border border-[#494949]  rounded-3xl grid lg:grid-cols-2 roadmapCard ${key % 2 == 0 ? "roadMapRight" : "roadMapLeft"}`}
           >
             <div className="flex flex-col justify-between items-start lg:gap-20 gap-10">
               <span className="px-4 py-2 rounded-lg bg-red-600">
                 Step {key + 1}
               </span>
               <div className="space-y-4">
-                <h3 className="lg:text-[58px] text-5xl leading-13 lg:leading-15 mb-7">{step.title}</h3>
+                <h3 className="lg:text-[58px] text-4xl leading-9 lg:leading-15 mb-7">{step.title}</h3>
                 <p>{step.para1}</p>
                 <p>{step.para2}</p>
               </div>

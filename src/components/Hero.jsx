@@ -46,7 +46,7 @@ const Hero = () => {
       className="h-[95vh] bg-[#EB0D18] mx-4 my-4 rounded-2xl  overflow-hidden relative"
       id="hero"
     >
-      <div className="flex  flex-col md:justify-center justify-start gap-0 h-screen max-w-350 m-auto">
+      <div className="flex  flex-col md:justify-center justify-start pt-20 gap-0 h-screen max-w-350 m-auto">
         <h2 className="hero-title md:text-[6.5em] md:leading-23 text-5xl text-center  md:max-w-230 max-w-100 mx-auto overflow-hidden h-50">
           Planet lizard is waiting for you
         </h2>
@@ -59,11 +59,11 @@ const Hero = () => {
           </p>
         </div>
         <div className="heroImages px-10 flex gap-4 w-full  items-end justify-center absolute bottom-0 left-1/2 right-1/2">
-          <img src="./images/hero-1.png" alt="" className="heroImg" />
-          <img src="./images/hero-2.png" alt="" className="heroImg" />
-          <img src="./images/hero-3.png" className="!max-w-75 heroImg" alt="" />
-          <img src="./images/hero-4.png" alt="" className="heroImg" />
-          <img src="./images/hero-5.png" alt="" className="heroImg" />
+          <img src="./images/hero-1.png" alt="" className="heroImg pointer-events-none" />
+          <img src="./images/hero-2.png" alt="" className="heroImg pointer-events-none" />
+          <img src="./images/hero-3.png" className="!max-w-75 heroImg pointer-events-none" alt="" />
+          <img src="./images/hero-4.png" alt="" className="heroImg pointer-events-none" />
+          <img src="./images/hero-5.png" alt="" className="heroImg pointer-events-none" />
         </div>
       </div>
     </div>
