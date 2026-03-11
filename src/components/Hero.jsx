@@ -46,7 +46,7 @@ const Hero = () => {
       className="h-[95vh] bg-[#EB0D18] mx-4 my-4 rounded-2xl  overflow-hidden relative"
       id="hero"
     >
-      <div className="flex  flex-col justify-center gap-0 h-screen max-w-350 m-auto">
+      <div className="flex  flex-col md:justify-center justify-start gap-0 h-screen max-w-350 m-auto">
         <h2 className="hero-title md:text-[6.5em] md:leading-23 text-5xl text-center  md:max-w-230 max-w-100 mx-auto overflow-hidden h-50">
           Planet lizard is waiting for you
         </h2>
