@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'rooyin';
-    src: url('./fonts/Rooyinbeta.woff2');
+    src: url('/Rooyinbeta.woff2');
 }
 
 @font-face {
     font-family: 'ragern';
-    src: url('./fonts/ragern.otf');
+    src: url('/ragern.otf');
 }
 
 @theme {
