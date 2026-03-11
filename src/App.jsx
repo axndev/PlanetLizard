@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Lenis from "lenis";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import Loader from "./components/ui/Loader";
 import Header from "./components/ui/Header";
 
