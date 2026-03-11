@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'rooyin';
+    src: url('./fonts/Rooyinbeta.woff2');
+}
+
+@font-face {
+    font-family: 'ragern';
+    src: url('./fonts/ragern.otf');
+}
+
+@theme {
+    --dark: #1F2024;
+    --accent: #EB0DD5;
+}
+
+body {
+    background-color: #1F2024;
+    font-family: 'rooyin';
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+h1, h2, h3, h4 {
+    font-family: 'ragern';
+    text-shadow: 6px 6px #1f2024;
+}
+
+p {
+    line-height: 19px;
+    font-size: 15px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-btn img {
+    z-index: 1;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.nav-btn .btn-text {
+    z-index: 1;
+}
+
+.nav-btn:hover::after {
+    top: 0;
+    border-radius: 4px;
+}
+
+.nav-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    background-color: var(--accent);
+    transition: all .5s ease-in-out;
+}
+
+.heroImages {
+    transform: translateX(-50%);
+}
+
+.heroImages img {
+    max-width: 210px;
+}
+
+.marqueWrapper {
+    overflow: auto;
+}
+
+.marqueWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.marqueSlider {
+    justify-content: flex-start;
+    align-items: stretch;
+    animation: leftSlider 25s infinite linear;
+    padding-right: 20px;
+}
+
+.imagesMarque {
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-right: 20px;
+
+}
+
+
+
+.marqueSlider.right {
+    animation: rightSlider 25s infinite linear;
+}
+
+@keyframes leftSlider {
+    from {
+        transform: translate(0%);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+@keyframes rightSlider {
+    from {
+        transform: translate(-100%);
+    }
+
+    to {
+        transform: translate(0%);
+    }
+}
+
+.roadmapCard {
+    position: relative;
+    background-color: var(--dark);
+}
+
+.roadmapCard:last-child::before,
+.roadmapCard:last-child::after {
+    display: none;
+}
+
+.roadmapCard::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    top: 100%;
+    left: 70px;
+    background-color: #494949;
+}
+
+.roadmapCard::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    top: 100%;
+    right: 70px;
+    background-color: #494949;
+}
+
+.rotateRight {
+    animation: rotateR .8s;
+}
+
+.rotateLeft {
+    animation: rotateL .8s;
+}
+
+@keyframes rotateR {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes rotateL {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.imagesWrapperOverlay,
+.imagesMarque img{
+    transition: all .2s ease-out;
+}
+
+@layer base{
+    body {
+        @apply selection:bg-red-600
+    }
+}
