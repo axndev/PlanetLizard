@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/hero";
+import Hero from "../components/Hero";
 import Collections from "../components/Collections";
 import Roadmap from "../components/Roadmap";
 import Marque from "../components/Marque";
