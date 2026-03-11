@@ -45,7 +45,7 @@ const Team = () => {
     });
   });
   return (
-    <div className="max-w-320 m-auto px-10">
+    <div className="max-w-320 m-auto px-5">
       <h2 className="md:text-7xl text-4xl">Meet the team</h2>
       <div className="grid lg:grid-cols-3 gap-5 mt-10" id="team">
         {team.map((member, key) => {

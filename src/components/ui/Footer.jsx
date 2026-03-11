@@ -20,7 +20,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="mt-30 h-[95vh] bg-[#EB0D18] mx-4 my-4 rounded-2xl flex items-center justify-end pb-7 flex-col gap-10">
+    <div className="mt-30 md:h-[95vh] bg-[#EB0D18] mx-4 my-4 rounded-2xl flex items-center justify-end py-7 flex-col gap-10">
       <span>Planet Lizard</span>
       <h2 className="text-[7.5vw] leading-[7.7vw] text-center">
         follow us <br /> on social media
