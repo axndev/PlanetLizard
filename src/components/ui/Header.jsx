@@ -35,7 +35,7 @@ const Header = () => {
     })
   })
   return (
-    <header className="absolute z-1 top-7 left-12 right-12 flex justify-between items-center text-[15px]">
+    <header className="absolute z-1 top-7 left-12 right-12 flex ms:justify-between justify-center items-center text-[15px]">
       <div className="bg-[#1F2024] rounded flex items-center justify-between">
         <img src="./images/logo.svg" alt="" className="p-3 px-4" />
         <ul className="lg:flex gap-5 border-l border-[#494949] p-3 px-4 hidden">

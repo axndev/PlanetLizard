@@ -98,8 +98,8 @@ const Roadmap = () => {
         <h2 className="max-w-300 m-auto">
           Here’s our content roadmap for 2023
         </h2>
-        <div className="absolute txtCircle bg-(--dark) gap-16 -top-[1px] left-1/2 right-1/2 -translate-x-1/2 flex flex-col justify-start items-center border border-[#49494999] rounded-full lg:w-80 lg:h-80 w-40 h-40 overflow-hidden ">
-          <h2 className="lg:min-w-300">Here’s our content roadmap for 2023</h2>
+        <div className="absolute txtCircle bg-(--dark) md:gap-16 gap-7 -top-[1px] left-1/2 right-1/2 -translate-x-1/2 flex flex-col justify-start items-center border border-[#49494999] rounded-full lg:w-80 lg:h-80 w-40 h-40 overflow-hidden ">
+          <h2 className="lg:min-w-300 min-w-100">Here’s our content roadmap for 2023</h2>
           <img
             src="./images/Arrow2.svg"
             alt=""
@@ -107,7 +107,7 @@ const Roadmap = () => {
           />
         </div>
       </div>
-      <div className="max-w-273 m-auto lg:mt-50 md:mt-10 mt-20 md:gap-25 gap-10 flex flex-col px-5">
+      <div className="max-w-273 m-auto lg:mt-50 md:mt-10 mt-30 md:gap-25 gap-10 flex flex-col px-5">
         {roadmap.map((step, key) => (
           <div
             key={key}

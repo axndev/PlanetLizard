@@ -46,7 +46,7 @@ const Team = () => {
   });
   return (
     <div className="max-w-320 m-auto px-10">
-      <h2 className="text-7xl">Meet the team</h2>
+      <h2 className="md:text-7xl text-4xl">Meet the team</h2>
       <div className="grid lg:grid-cols-3 gap-5 mt-10" id="team">
         {team.map((member, key) => {
           return (
@@ -57,7 +57,7 @@ const Team = () => {
               <div className="bg-[#FFF9C5] rounded-md flex item-end justify-center overflow-hidden">
                 <img
                   src={member.profile}
-                  className="max-w-77 member-pfp"
+                  className="md:max-w-77 member-pfp max-w-50"
                   alt=""
                 />
               </div>
